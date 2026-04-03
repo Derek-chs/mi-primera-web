@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Mi primera web</title>
+<html lang="es"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Restaurante</title>
+  
+<style> 
+*{ 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+  font-family: 'Arial', 
+  sans-serif; 
+} 
+body, html{ 
+  height:100%; 
+} /* FONDO */ 
+  .hero{ background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')
+    no-repeat center center/cover; 
+        height:100vh; 
+        display:flex; 
+        justify-content:center;
+        align-items:center; 
+        text-align:center; 
+        color:white; 
+       } /* CAPA OSCURA */ 
+  .overlay{ 
+    background: rgba(0,0,0,0.6); 
+    padding:40px; 
+    border-radius:10px; 
+  } /* TITULO */ 
+  h1{ 
+    font-size:60px; 
+    margin-bottom:20px; 
+    letter-spacing:3px; 
+  } /* BOTONES */ 
+  .menu{ 
+    display:flex; 
+    gap:20px; 
+    justify-content:center; 
+    flex-wrap:wrap; } 
+  .menu a{ 
+    text-decoration:none;
+    color:white;
+    border:2px solid white; 
+    padding:12px 25px;
+    border-radius:30px;
+    transition:0.3s; 
+  }
+  .menu a:hover{
+    background:white; 
+    color:black;
+  } 
+</style>
 </head>
-<body>
-  <h1>Restaurante</h1>
-  <p>NICA PAISA DIANY</p>
-</body>
+  <body> 
+    <div class="hero"> 
+      <div class="overlay"> 
+        <h1>RESTAURANTE EL SABOR</h1>
+        <div class="menu"> 
+          <a href="#">🍽 Menú</a> 
+          <a href="#">📅 Reservas</a> 
+          <a href="#">📍 Ubicación</a> 
+          <a href="#">📞 Contacto</a> 
+        </div> 
+      </div> 
+    </div> 
+  </body> 
 </html>
