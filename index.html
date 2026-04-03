@@ -5,149 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marea Baja</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+<link rel="stylesheet" href="style.css">
 
-html{scroll-behavior:smooth;}
-body{background:#0a0a0a;color:white;}
-
-/* NAVBAR */
-.navbar{
-  position:fixed;
-  top:0;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  padding:20px 50px;
-  background:rgba(0,0,0,0.8);
-  backdrop-filter: blur(5px);
-  z-index:1000;
-}
-
-.navbar a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-  transition:0.3s;
-}
-
-.navbar a:hover{
-  color:#ff4d4d;
-}
-
-/* HERO */
-.hero{
-  height:100vh;
-  background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')
-  center/cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.overlay{
-  background:rgba(0,0,0,0.6);
-  padding:40px;
-  border-radius:15px;
-  text-align:center;
-}
-
-.overlay h1{
-  font-size:50px;
-  margin-bottom:20px;
-}
-
-/* SECCIONES */
-section{
-  padding:80px 20px;
-  text-align:center;
-}
-
-/* MENU */
-.menu-item{
-  display:flex;
-  gap:20px;
-  background:#1a1a1a;
-  margin:20px auto;
-  max-width:800px;
-  border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 0 10px rgba(255,255,255,0.1);
-}
-
-.menu-item img{
-  width:250px;
-  object-fit:cover;
-}
-
-.menu-text{
-  padding:20px;
-  text-align:left;
-}
-
-/* GALERIA */
-.gallery{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.gallery img{
-  width:300px;
-  margin:10px;
-  border-radius:15px;
-  transition:0.3s;
-}
-
-.gallery img:hover{
-  transform:scale(1.05);
-}
-
-/* UBICACION */
-.location{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  flex-wrap:wrap;
-}
-
-.location iframe{
-  width:350px;
-  height:250px;
-  border-radius:10px;
-}
-
-.info{
-  text-align:left;
-  max-width:300px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
-  color:white;
-  font-size:20px;
-}
-
-/* FOOTER */
-footer{
-  padding:20px;
-  background:black;
-}
-</style>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <div>MAREA BAJA</div>
+  <div class="logo">MAREA BAJA</div>
   <div>
     <a href="#home">Inicio</a>
     <a href="#menu">Menú</a>
@@ -209,11 +75,12 @@ footer{
 <!-- GALERIA -->
 <section id="galeria">
 <h2>📸 Galería</h2>
-<p>Ambiente único y elegante</p>
+<p>Disfruta nuestro ambiente</p>
 
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
 <img src="https://images.unsplash.com/photo-1541542684-4a9c4c3c5f59">
+<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
 </div>
 </section>
 
@@ -222,22 +89,19 @@ footer{
 <h2>📍 Ubicación</h2>
 
 <div class="location">
+
 <iframe src="https://www.google.com/maps?q=Marea+Baja+Jaco&output=embed"></iframe>
 
 <div class="info">
-<p><strong>Dirección:</strong> Jacó, Costa Rica</p>
-<p><strong>Teléfono:</strong> 2643-3530</p>
-<p><strong>WhatsApp:</strong> 8888-8888</p>
+<p><strong>📍 Dirección:</strong> Jacó, Costa Rica</p>
+<p><strong>📞 Teléfono:</strong> 2643-3530</p>
+<p><strong>💬 WhatsApp:</strong> 8888-8888</p>
 <p>Abierto todos los días 🍽️</p>
 </div>
+
 </div>
 
 </section>
-
-<!-- FOOTER -->
-<footer>
-<p>© 2026 Marea Baja</p>
-</footer>
 
 <!-- WHATSAPP -->
 <a href="https://wa.me/50688888888" class="whatsapp">💬</a>
