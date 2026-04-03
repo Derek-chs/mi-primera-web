@@ -17,21 +17,17 @@ body{
 /* NAVBAR */
 .navbar{
   position:fixed;
-  top:0;
   width:100%;
   display:flex;
   justify-content:space-between;
   padding:20px 50px;
   background:rgba(0,0,0,0.8);
-  backdrop-filter: blur(5px);
-  z-index:1000;
 }
 
 .navbar a{
   color:white;
   margin-left:20px;
   text-decoration:none;
-  transition:0.3s;
 }
 
 .navbar a:hover{
@@ -50,19 +46,30 @@ body{
 
 .overlay{
   background:rgba(0,0,0,0.6);
-  padding:40px;
+  padding:50px;
   border-radius:15px;
   text-align:center;
 }
 
-.overlay h1{
-  font-size:50px;
+.hero-buttons a{
+  display:inline-block;
+  margin:10px;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  background:#ff4d4d;
+  color:white;
 }
 
 /* SECCIONES */
 section{
   padding:80px 20px;
   text-align:center;
+}
+
+/* ABOUT */
+.about{
+  background:#111;
 }
 
 /* MENU */
@@ -73,13 +80,10 @@ section{
   margin:20px auto;
   max-width:800px;
   border-radius:15px;
-  overflow:hidden;
-  box-shadow:0 0 10px rgba(255,255,255,0.1);
 }
 
 .menu-item img{
   width:250px;
-  object-fit:cover;
 }
 
 .menu-text{
@@ -88,40 +92,38 @@ section{
 }
 
 /* GALERIA */
-.gallery{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
 .gallery img{
   width:300px;
   margin:10px;
-  border-radius:15px;
-  transition:0.3s;
-}
-
-.gallery img:hover{
-  transform:scale(1.05);
+  border-radius:10px;
 }
 
 /* UBICACION */
 .location{
   display:flex;
-  justify-content:center;
   gap:30px;
+  justify-content:center;
   flex-wrap:wrap;
 }
 
 .location iframe{
   width:350px;
   height:250px;
-  border-radius:10px;
 }
 
-.info{
-  text-align:left;
-  max-width:300px;
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#ff4d4d;
+  color:white;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  background:black;
 }
 
 /* WHATSAPP */
@@ -132,7 +134,5 @@ section{
   background:#25D366;
   padding:15px;
   border-radius:50%;
-  text-decoration:none;
   color:white;
-  font-size:20px;
 }
