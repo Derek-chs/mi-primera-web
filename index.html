@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="es"> 
-<head> 
-<meta charset="UTF-8"> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Restaurante</title>
+<title>Restaurante El Sabor</title>
 
-<style> 
-*{ 
-  margin:0; 
-  padding:0; 
-  box-sizing:border-box; 
-  font-family: Arial, sans-serif; 
-} 
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 
-body{
-  background:#111;
-  color:white;
-}
+html{scroll-behavior:smooth;}
+
+body{background:#111;color:white;}
 
 /* NAVBAR */
 .navbar{
@@ -25,52 +19,67 @@ body{
   width:100%;
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:20px 50px;
-  background: rgba(0,0,0,0.7);
+  background:rgba(0,0,0,0.7);
   z-index:1000;
 }
 
-.navbar h2{
-  font-size:24px;
-}
-
-.nav-links{
-  display:flex;
-  gap:20px;
-}
-
-.nav-links a{
+.navbar a{
   color:white;
+  margin-left:20px;
   text-decoration:none;
 }
 
-.nav-links a:hover{
-  color:#ff4d4d;
-}
-
-/* HERO SOLO IMAGEN */
-.hero{ 
-  background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')
-  no-repeat center center/cover; 
-  height:100vh; 
+/* HERO */
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')
+  center/cover no-repeat;
 }
 
 /* SECCIONES */
 section{
-  padding:60px 20px;
-  text-align:center;
+  padding:80px 20px;
 }
 
-img{
+/* MENU */
+.menu-item{
+  display:flex;
+  gap:20px;
+  background:#222;
+  margin:20px auto;
+  max-width:700px;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.menu-item img{
+  width:200px;
+  height:150px;
+  object-fit:cover;
+}
+
+.menu-text{
+  padding:15px;
+}
+
+/* GALERIA */
+.gallery img{
+  width:300px;
   margin:10px;
   border-radius:10px;
 }
 
-/* FOOTER */
-footer{
-  background:black;
-  padding:20px;
+/* UBICACION */
+.location{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.location iframe{
+  width:300px;
+  height:200px;
 }
 
 /* WHATSAPP */
@@ -79,89 +88,101 @@ footer{
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:white;
-  font-size:25px;
   padding:15px;
   border-radius:50%;
   text-decoration:none;
+  color:white;
 }
 </style>
 </head>
 
-<body> 
+<body>
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <h4> 𝙼𝙰𝚁𝙴𝙰 𝙱𝙰𝙹𝙰 </h4>
-  <div class="nav-links">
-    <a href="#">Inicio</a>
-    <a href="#">Menú</a>
-    <a href="#">Galería</a>
-    <a href="#">Contacto</a>
+  <div>MAREA BAJA</div>
+  <div>
+    <a href="#home">Inicio</a>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#ubicacion">Contacto</a>
   </div>
 </div>
 
-<!-- HERO (SIN TEXTO) -->
-<div class="hero"></div>
+<!-- HERO -->
+<div id="home" class="hero"></div>
 
 <!-- MENU -->
-<section style="padding:60px; background:#111; color:white;">
-  <h2 style="text-align:center; margin-bottom:30px;">🍔 Nuestro Menú</h2>
+<section id="menu">
+<h2>🍔 Nuestro Menú</h2>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<div class="menu-text">
+<h3>Hamburguesa Clásica</h3>
+<p>Carne, lechuga, tomate y queso</p>
+<strong>₡4,500</strong>
+</div>
+</div>
 
-    <!-- ITEM -->
-    <div style="background:#222; padding:20px; border-radius:15px; width:250px;">
-      <h3>🍔 Hamburguesa Clásica</h3>
-      <p>Carne, lechuga, tomate y queso</p>
-      <strong>₡4,500</strong>
-    </div>
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<div class="menu-text">
+<h3>Doble Sabor</h3>
+<p>Doble carne, bacon y queso cheddar</p>
+<strong>₡6,500</strong>
+</div>
+</div>
 
-    <div style="background:#222; padding:20px; border-radius:15px; width:250px;">
-      <h3>🍔 Doble Sabor</h3>
-      <p>Doble carne, bacon y queso cheddar</p>
-      <strong>₡6,500</strong>
-    </div>
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1601924582975-7c7a4d4b8d9c">
+<div class="menu-text">
+<h3>Pizza Pepperoni</h3>
+<p>Queso mozzarella y pepperoni</p>
+<strong>₡5,000</strong>
+</div>
+</div>
 
-    <div style="background:#222; padding:20px; border-radius:15px; width:250px;">
-      <h3>🍕 Pizza Pepperoni</h3>
-      <p>Queso mozzarella y pepperoni</p>
-      <strong>₡5,000</strong>
-    </div>
+<div class="menu-item">
+<img src="https://images.unsplash.com/photo-1604908176997-431c5f6e9f0d">
+<div class="menu-text">
+<h3>Tacos</h3>
+<p>Carne, cebolla y cilantro</p>
+<strong>₡3,500</strong>
+</div>
+</div>
 
-    <div style="background:#222; padding:20px; border-radius:15px; width:250px;">
-      <h3>🌮 Tacos</h3>
-      <p>Carne, cebolla y cilantro</p>
-      <strong>₡3,500</strong>
-    </div>
-
-  </div>
 </section>
 
 <!-- GALERIA -->
-<section>
-  <h2>📸 Galería</h2>
-  <img src="https://maps.app.goo.gl/PEoerksDX9xucgoP7" width="300">
-  <img src="https://images.unsplash.com/photo-1541542684-4a9c4c3c5f59" width="300">
+<section id="galeria">
+<h2>📸 Galería</h2>
+<p>Disfruta del ambiente de nuestro restaurante</p>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+<img src="https://images.unsplash.com/photo-1541542684-4a9c4c3c5f59">
+</div>
 </section>
 
 <!-- UBICACION -->
-<section>
-  <h2>📍 Ubicación</h2>
-  <iframe 
-    src="https://www.google.com/maps?q=Marea+Baja+Jaco&output=embed"
-    width="100%" 
-    height="300">
-  </iframe>
+<section id="ubicacion">
+<h2>📍 Ubicación</h2>
+
+<div class="location">
+<iframe src="https://www.google.com/maps?q=Marea+Baja+Jaco&output=embed"></iframe>
+
+<div>
+<p><strong>Dirección:</strong> Jacó, Costa Rica</p>
+<p><strong>Teléfono:</strong> 8888-8888</p>
+<p><strong>WhatsApp:</strong> 8888-8888</p>
+</div>
+</div>
+
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p> 𝙼𝙰𝚁𝙴𝙰 𝙱𝙰𝙹𝙰 2027</p>
-</footer>
-
 <!-- WHATSAPP -->
-<a href="https://wa.me/50688888888" target="_blank" class="whatsapp">💬</a>
+<a href="https://wa.me/50688888888" class="whatsapp">💬</a>
 
-</body> 
+</body>
 </html>
