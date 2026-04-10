@@ -18,6 +18,7 @@
   </nav>
 </header>
 
+<!-- HOME -->
 <section id="home" class="section home">
   <div class="overlay">
     <h1>Bienvenido a Marea Baja</h1>
@@ -26,6 +27,7 @@
   </div>
 </section>
 
+<!-- MENU -->
 <section id="menu" class="section">
   <h2>Menú</h2>
   <div id="menuOptions" class="menu-options">
@@ -35,15 +37,28 @@
   </div>
 </section>
 
+<!-- GALERÍA -->
 <section id="galeria" class="section">
   <h2>Galería</h2>
+
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
-    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+
+    <div class="item" onclick="abrirModal('Ceviche', 'Ceviche fresco con camarón, limón y especias', 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5')">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
+    </div>
+
+    <div class="item" onclick="abrirModal('Pescado', 'Pescado a la parrilla con vegetales frescos', 'https://images.unsplash.com/photo-1544145945-f90425340c7e')">
+      <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+    </div>
+
+    <div class="item" onclick="abrirModal('Mariscos', 'Mix de mariscos estilo Marea Baja', 'https://images.unsplash.com/photo-1504674900247-0877df9cc836')">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+    </div>
+
   </div>
 </section>
 
+<!-- CONTACTO -->
 <section id="contacto" class="section">
   <h2>Contáctanos</h2>
   <p>WhatsApp: +506 8888-8888</p>
@@ -52,7 +67,18 @@
   <iframe src="https://www.google.com/maps?q=Marea+Baja+Jaco&output=embed"></iframe>
 </section>
 
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2 id="titulo"></h2>
+    <img id="imagen" src="">
+    <p id="descripcion"></p>
+    <button onclick="reservar()">Pedir por WhatsApp</button>
+  </div>
+</div>
+
 <script src="script.js"></script>
-  
+
 </body>
 </html>
