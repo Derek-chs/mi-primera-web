@@ -51,6 +51,36 @@ nav a {
   display: inline-block;
 }
 
+}
+
+/* GALERÍA */
+.Menú {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.Menú img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Menú img:hover {
+  transform: scale(1.05);
+}
+
+/* BOTÓN */
+button {
+  padding: 10px 20px;
+  background: green;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* GALERÍA */
 .gallery {
   display: grid;
