@@ -79,3 +79,45 @@ iframe {
   margin-top: 20px;
   border: none;
 }
+
+/* HOME HERO */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+  height: 100vh;
+  padding: 0;
+}
+
+/* CAPA OSCURA */
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* TEXTO */
+.overlay h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN MÁS PRO */
+.overlay button {
+  background: #ff9800;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.overlay button:hover {
+  background: #e68900;
+  transform: scale(1.05);
+}
