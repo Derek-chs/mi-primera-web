@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marea Baja</title>
+<title>El Sabor</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="steyls.css">
 
 </head>
 
@@ -13,8 +13,8 @@
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <div class="logo">MAREA BAJA</div>
-  <div>
+  <h2>🍔 El Sabor</h2>
+  <div class="nav-links">
     <a href="#home">Inicio</a>
     <a href="#menu">Menú</a>
     <a href="#galeria">Galería</a>
@@ -25,55 +25,49 @@
 <!-- HERO -->
 <div id="home" class="hero">
   <div class="overlay">
-    <h1>MAREA BAJA</h1>
-    <p>Experiencia gastronómica única en Jacó</p>
-
-    <div class="hero-buttons">
+    <h1 class="anim">MI RESTAURANTE EL SABOR</h1>
+    <p class="anim">🔥 Experiencia gastronómica premium</p>
+    <div class="botones anim">
       <a href="#menu">Ver Menú</a>
-      <a href="https://wa.me/50688888888">Reservar</a>
+      <a href="#ubicacion">Reservar</a>
     </div>
-
   </div>
 </div>
-
-<!-- SOBRE NOSOTROS -->
-<section class="about">
-  <h2>🍽️ Sobre Nosotros</h2>
-  <p>
-    En Marea Baja ofrecemos una experiencia culinaria única frente al mar, 
-    combinando ingredientes frescos con un ambiente elegante y relajado.
-  </p>
-</section>
 
 <!-- MENU -->
 <section id="menu">
 <h2>🍔 Nuestro Menú</h2>
 
-<div class="menu-item">
+<div class="menu-grid">
+
+<div class="card">
 <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
-<div class="menu-text">
 <h3>Hamburguesa Gourmet</h3>
-<p>Carne premium, queso cheddar, bacon y salsa especial</p>
-<strong>₡6,500</strong>
-</div>
+<p>Carne premium + queso + bacon</p>
+<span>₡6,500</span>
 </div>
 
-<div class="menu-item">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1601924582975-7c7a4d4b8d9c">
-<div class="menu-text">
 <h3>Pizza Artesanal</h3>
-<p>Masa casera, mozzarella fresca y pepperoni</p>
-<strong>₡5,500</strong>
-</div>
+<p>Mozzarella + pepperoni</p>
+<span>₡5,500</span>
 </div>
 
-<div class="menu-item">
+<div class="card">
 <img src="https://images.unsplash.com/photo-1604908176997-431c5f6e9f0d">
-<div class="menu-text">
 <h3>Tacos Premium</h3>
-<p>Carne jugosa, cebolla, cilantro y salsa especial</p>
-<strong>₡4,000</strong>
+<p>Carne + salsa especial</p>
+<span>₡4,000</span>
 </div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Hamburguesa Doble</h3>
+<p>Doble carne + cheddar</p>
+<span>₡7,000</span>
+</div>
+
 </div>
 
 </section>
@@ -81,13 +75,14 @@
 <!-- GALERIA -->
 <section id="galeria">
 <h2>📸 Galería</h2>
-<p>Ambiente elegante frente al mar</p>
 
 <div class="gallery">
 <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
 <img src="https://images.unsplash.com/photo-1541542684-4a9c4c3c5f59">
 <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1">
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de">
 </div>
+
 </section>
 
 <!-- UBICACION -->
@@ -99,12 +94,13 @@
 <iframe src="https://www.google.com/maps?q=Marea+Baja+Jaco&output=embed"></iframe>
 
 <div class="info">
-<p><strong>📍 Dirección:</strong> Jacó, Costa Rica</p>
-<p><strong>📞 Teléfono:</strong> 2643-3530</p>
-<p><strong>💬 WhatsApp:</strong> 8888-8888</p>
-<p><strong>⏰ Horario:</strong> 11:00 AM - 10:00 PM</p>
+<p>📍 Jacó, Costa Rica</p>
+<p>📞 2643-3530</p>
+<p>💬 WhatsApp: 8888-8888</p>
+<p>⏰ 11am - 10pm</p>
 
-<a href="https://wa.me/50688888888" class="btn">Reservar por WhatsApp</a>
+<a href="https://wa.me/50688888888" class="btn">Reservar ahora</a>
+
 </div>
 
 </div>
@@ -113,11 +109,10 @@
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 Marea Baja | Todos los derechos reservados</p>
+<p>© 2026 El Sabor</p>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/50688888888" class="whatsapp">💬</a>
+<a href="#" class="whatsapp">💬</a>
 
 </body>
 </html>
