@@ -17,9 +17,10 @@ function reservar() {
   window.open('https://wa.me/50688888888', '_blank');
 }
 
-/* MODAL */
 function abrirModal(nombre, descripcion, imagen) {
-  document.getElementById("modal").style.display = "block";
+  let modal = document.getElementById("modal");
+  modal.style.display = "flex";
+
   document.getElementById("titulo").innerText = nombre;
   document.getElementById("descripcion").innerText = descripcion;
   document.getElementById("imagen").src = imagen;
@@ -28,6 +29,3 @@ function abrirModal(nombre, descripcion, imagen) {
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
-
-/* INICIO */
-showSection('home');
