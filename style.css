@@ -91,13 +91,14 @@ iframe {
 .home {
   display: flex;
   justify-content: center;
-  align-items: center; /* 🔥 CENTRO VERTICAL REAL */
+  align-items: center;
   text-align: center;
 
   background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
   height: 100vh;
 
-  padding: 0; /* 🔥 IMPORTANTE */
+  padding-top: 70px; /* 🔥 AGREGA ESTO */
+  box-sizing: border-box;
 }
 
 .overlay {
