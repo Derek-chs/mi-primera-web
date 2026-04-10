@@ -21,17 +21,7 @@ body{
   display:flex;
   justify-content:space-between;
   padding:20px 50px;
-  background:rgba(0,0,0,0.8);
-}
-
-.navbar a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-}
-
-.navbar a:hover{
-  color:#ff4d4d;
+  background:rgba(0,0,0,0.7);
 }
 
 /* HERO */
@@ -48,82 +38,94 @@ body{
   background:rgba(0,0,0,0.6);
   padding:50px;
   border-radius:15px;
-  text-align:center;
 }
 
-.hero-buttons a{
-  display:inline-block;
-  margin:10px;
+/* ANIMACION */
+.anim{
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* BOTONES */
+.botones a{
   padding:12px 25px;
   border-radius:30px;
-  text-decoration:none;
   background:#ff4d4d;
   color:white;
+  margin:10px;
+  text-decoration:none;
 }
 
-/* SECCIONES */
-section{
-  padding:80px 20px;
-  text-align:center;
-}
-
-/* ABOUT */
-.about{
-  background:#111;
-}
-
-/* MENU */
-.menu-item{
-  display:flex;
+/* MENU GRID */
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
-  background:#1a1a1a;
-  margin:20px auto;
-  max-width:800px;
-  border-radius:15px;
-}
-
-.menu-item img{
-  width:250px;
-}
-
-.menu-text{
   padding:20px;
-  text-align:left;
+}
+
+.card{
+  background:#1a1a1a;
+  border-radius:15px;
+  overflow:hidden;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+}
+
+.card span{
+  color:#ff4d4d;
 }
 
 /* GALERIA */
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
 .gallery img{
-  width:300px;
+  width:250px;
   margin:10px;
   border-radius:10px;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.1);
 }
 
 /* UBICACION */
 .location{
   display:flex;
-  gap:30px;
-  justify-content:center;
   flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
 }
 
-.location iframe{
-  width:350px;
-  height:250px;
+iframe{
+  width:300px;
+  height:200px;
 }
 
 .btn{
+  background:#ff4d4d;
+  padding:10px 20px;
+  text-decoration:none;
+  color:white;
   display:inline-block;
   margin-top:10px;
-  padding:10px 20px;
-  background:#ff4d4d;
-  color:white;
-  text-decoration:none;
-}
-
-/* FOOTER */
-footer{
-  padding:20px;
-  background:black;
 }
 
 /* WHATSAPP */
@@ -134,5 +136,5 @@ footer{
   background:#25D366;
   padding:15px;
   border-radius:50%;
-  color:white;
+  font-size:25px;
 }
