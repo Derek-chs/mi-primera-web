@@ -17,5 +17,17 @@ function reservar() {
   window.open('https://wa.me/50688888888', '_blank');
 }
 
-// Mostrar inicio
+/* MODAL */
+function abrirModal(nombre, descripcion, imagen) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("titulo").innerText = nombre;
+  document.getElementById("descripcion").innerText = descripcion;
+  document.getElementById("imagen").src = imagen;
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+/* INICIO */
 showSection('home');
