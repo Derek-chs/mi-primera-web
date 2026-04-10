@@ -89,13 +89,15 @@ iframe {
 
 /* HOME */
 .home {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* 🔥 CENTRO VERTICAL REAL */
+  text-align: center;
 
-  /* 🔥 ESTA ES LA CLAVE */
-  padding-top: 70px; /* ajusta según tu header */
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+  height: 100vh;
+
+  padding: 0; /* 🔥 IMPORTANTE */
 }
 
 .overlay {
