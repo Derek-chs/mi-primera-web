@@ -101,7 +101,9 @@ iframe {
 }
 
 .overlay {
-  margin-top: 120px; /* 🔥 ajusta este valor */
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
 }
 
 /* 🔥 MODAL PRO */
