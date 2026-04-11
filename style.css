@@ -257,4 +257,77 @@ html {
   .info, .mapa {
     width: 100%;
   }
+  /* 🔥 RESPONSIVE CELULAR */
+@media (max-width: 768px) {
+}
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    font-size: 14px;
+  }
+
+  /* HOME */
+  .home {
+    padding-top: 150px;
+    height: auto;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 24px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  /* MENÚ CARDS */
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  /* GALERÍA */
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  /* UBICACIÓN */
+  .ubicacion-container {
+    flex-direction: column;
+  }
+
+  .info, .mapa {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .mapa iframe {
+    min-height: 250px;
+  }
+
+  /* CONTACTO */
+  iframe {
+    height: 250px;
+  }
+}
 }
