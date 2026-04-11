@@ -257,9 +257,14 @@ html {
   .info, .mapa {
     width: 100%;
   }
-  /* 🔥 RESPONSIVE CELULAR */
+/* 🔥 RESPONSIVE CELULAR */
 @media (max-width: 768px) {
-}
+
+  /* 🔥 ARREGLO GENERAL */
+  body {
+    overflow-x: hidden;
+  }
+
   /* HEADER */
   header {
     flex-direction: column;
@@ -314,20 +319,28 @@ html {
   /* UBICACIÓN */
   .ubicacion-container {
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
   }
 
   .info, .mapa {
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .servicios {
+    grid-template-columns: 1fr; /* 🔥 una sola columna */
   }
 
   .mapa iframe {
     min-height: 250px;
+    width: 100%;
   }
 
   /* CONTACTO */
   iframe {
     height: 250px;
   }
-}
+
 }
