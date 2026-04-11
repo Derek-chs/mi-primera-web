@@ -12,13 +12,22 @@ header {
   width: 100%;
   background: rgba(0,0,0,0.7);
   display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
+  flex-direction: column; /* 🔥 CAMBIO */
+  align-items: center;     /* 🔥 CAMBIO */
+  justify-content: center; /* 🔥 CAMBIO */
+  padding: 15px 0;         /* 🔥 CAMBIO */
   z-index: 1000;
 }
 
 .logo {
   font-weight: bold;
+  margin-bottom: 5px; /* 🔥 CAMBIO */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* 🔥 CAMBIO */
+  flex-wrap: wrap;
 }
 
 nav a {
