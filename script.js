@@ -24,3 +24,14 @@ document.querySelectorAll("nav a").forEach(link => {
     document.querySelector("nav").classList.remove("active");
   });
 });
+
+/* 🔥 ARREGLO IMPORTANTE (para que no falle en GitHub) */
+document.addEventListener("DOMContentLoaded", function() {
+
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.querySelector("nav").classList.remove("active");
+    });
+  });
+
+});
