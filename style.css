@@ -356,4 +356,54 @@ html {
   iframe {
     height: 250px;
   }
+  /* 🔥 FOOTER ELEGANTE */
+.footer {
+  background: black;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.footer-link {
+  color: #ff4d6d;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.footer-text {
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.footer-follow {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.footer-icons {
+  margin: 15px 0;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #ff4d6d;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+  }
 }
