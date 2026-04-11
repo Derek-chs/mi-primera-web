@@ -10,23 +10,25 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.0);
+  background: rgba(0,0,0,0.7);
   display: flex;
-  flex-direction: column; /* 🔥 CAMBIO */
-  align-items: center;     /* 🔥 CAMBIO */
-  justify-content: center; /* 🔥 CAMBIO */
-  padding: 15px 0;         /* 🔥 CAMBIO */
+  align-items: center;
+  justify-content: center; /* centra el menú */
+  padding: 15px 0;
   z-index: 1000;
 }
 
+/* LOGO A LA IZQUIERDA */
 .logo {
+  position: absolute;
+  left: 20px; /* 🔥 lo manda a la izquierda */
   font-weight: bold;
-  margin-bottom: 5px; /* 🔥 CAMBIO */
 }
 
+/* NAV CENTRADO */
 nav {
   display: flex;
-  justify-content: center; /* 🔥 CAMBIO */
+  justify-content: center;
   flex-wrap: wrap;
 }
 
