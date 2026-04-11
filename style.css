@@ -79,7 +79,7 @@ nav a {
 }
 
 #menu {
-  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+  background: url('https://www.mochomos.mx/img/galeria/restaurante/h9.jpg') no-repeat center center/cover;
 }
 
 .card:hover {
@@ -123,7 +123,7 @@ nav a {
 #gallery {
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+    url('https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg') no-repeat center center/cover;
 }
 
 .gallery img {
