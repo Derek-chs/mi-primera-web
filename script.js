@@ -12,3 +12,15 @@ function abrirModal(nombre, descripcion, imagen) {
 function cerrarModal() {
   document.getElementById("modal").classList.remove("active");
 }
+
+/* 🔥 MENU HAMBURGUESA */
+function toggleMenu() {
+  document.querySelector("nav").classList.toggle("active");
+}
+
+/* 🔥 OPCIONAL: cerrar menú al hacer click */
+document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector("nav").classList.remove("active");
+  });
+});
