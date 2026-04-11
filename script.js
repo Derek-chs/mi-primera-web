@@ -1,23 +1,7 @@
-function showSection(sectionId) {
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.style.display = 'none';
-  });
-
-  document.getElementById(sectionId).style.display = 'block';
-}
-
-function toggleMenu() {
-  showSection('menu');
-
-  let menu = document.getElementById('menuOptions');
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-}
-
 function reservar() {
   window.open('https://wa.me/50688888888', '_blank');
 }
 
-/* 🔥 MODAL */
 function abrirModal(nombre, descripcion, imagen) {
   document.getElementById("modal").classList.add("active");
   document.getElementById("titulo").innerText = nombre;
@@ -28,6 +12,3 @@ function abrirModal(nombre, descripcion, imagen) {
 function cerrarModal() {
   document.getElementById("modal").classList.remove("active");
 }
-
-/* INICIO */
-showSection('home');
