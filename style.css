@@ -13,15 +13,26 @@ header {
   background: rgba(0,0,0,0.7);
   display: flex;
   align-items: center;
-  justify-content: center; /* centra el menú */
+  justify-content: center;
   padding: 15px 0;
   z-index: 1000;
+}
+
+/* 🔥 BOTÓN MENU */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2000;
 }
 
 /* LOGO A LA IZQUIERDA */
 .logo {
   position: absolute;
-  left: 20px; /* 🔥 lo manda a la izquierda */
+  left: 20px;
   font-weight: bold;
 }
 
@@ -265,14 +276,32 @@ html {
     text-align: center;
   }
 
+  /* 🔥 ACTIVA BOTÓN */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* 🔥 MENÚ LATERAL */
   nav {
-    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: black;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: 0.3s;
+  }
+
+  nav.active {
+    left: 0;
   }
 
   nav a {
-    display: inline-block;
-    margin: 5px 8px;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
   }
 
   .home {
