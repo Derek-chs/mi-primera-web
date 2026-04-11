@@ -10,7 +10,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.0);
   display: flex;
   flex-direction: column; /* 🔥 CAMBIO */
   align-items: center;     /* 🔥 CAMBIO */
