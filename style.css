@@ -276,12 +276,10 @@ html {
     text-align: center;
   }
 
-  /* 🔥 ACTIVA BOTÓN */
   .menu-toggle {
     display: block;
   }
 
-  /* 🔥 MENÚ LATERAL */
   nav {
     position: fixed;
     top: 0;
@@ -356,7 +354,10 @@ html {
   iframe {
     height: 250px;
   }
-  /* 🔥 FOOTER ELEGANTE */
+
+}
+
+/* 🔥 FOOTER ELEGANTE (FUERA DEL MEDIA) */
 .footer {
   background: black;
   text-align: center;
@@ -405,5 +406,4 @@ html {
   margin-top: 30px;
   font-size: 14px;
   color: #aaa;
-  }
 }
