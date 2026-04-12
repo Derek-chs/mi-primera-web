@@ -68,8 +68,15 @@
   
 <section id="gallery" class="section">
   <h2>Galeria</h2>
-  <div class="gallery">
 
+  <!-- 🔥 AGREGADO: BOTONES -->
+  <div class="tabs">
+    <button onclick="mostrarCategoria('galeria')">Galería</button>
+    <button onclick="mostrarCategoria('restaurante')">Restaurante</button>
+  </div>
+
+  <!-- 🔥 AGREGADO: SLIDER 1 -->
+  <div id="galeria" class="slider active">
     <img src="https://www.mochomos.mx/img/galeria/platillos/filete-en-su-jugo.jpg"
     onclick="abrirModal('Ceviche', 'Ceviche fresco con camarón y limón', this.src)">
 
@@ -78,7 +85,10 @@
 
     <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
     onclick="abrirModal('Mariscos', 'Mix de mariscos estilo Marea Baja', this.src)">
-    
+  </div>
+
+  <!-- 🔥 AGREGADO: SLIDER 2 -->
+  <div id="restaurante" class="slider">
     <img src="https://www.mochomos.mx/img/galeria/platillos/salmon-colorado.jpg"
     onclick="abrirModal('Ceviche', 'Ceviche fresco con camarón y limón', this.src)">
 
@@ -96,8 +106,8 @@
 
     <img src="https://www.mochomos.mx/img/galeria/platillos/rib-eye-anejo.jpg"
     onclick="abrirModal('Mariscos', 'Mix de mariscos estilo Marea Baja', this.src)">
-
   </div>
+
 </section>
 
 <!-- UBICACIÓN -->
@@ -147,7 +157,17 @@
 
 <script src="script.js"></script>
 
-<!-- 🔥 FOOTER (BIEN COLOCADO) -->
+<!-- 🔥 AGREGADO JS PARA SLIDER -->
+<script>
+function mostrarCategoria(id) {
+  document.querySelectorAll('.slider').forEach(el => {
+    el.classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+}
+</script>
+
+<!-- 🔥 FOOTER -->
 <footer class="footer">
   <div class="footer-content">
 
