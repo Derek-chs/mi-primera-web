@@ -35,3 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
+/* ========================= */
+/* 🔥 LO NUEVO (SLIDER TABS) */
+/* ========================= */
+
+function mostrarCategoria(id) {
+  document.querySelectorAll('.slider').forEach(el => {
+    el.classList.remove('active');
+  });
+
+  document.getElementById(id).classList.add('active');
+}
