@@ -438,3 +438,17 @@ html {
 .tabs button:hover {
   background: #ff9800;
 }
+/* 🔥 FIX PARA CELULAR */
+@media (max-width: 768px) {
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  header {
+    justify-content: center;
+  }
