@@ -438,6 +438,7 @@ html {
 .tabs button:hover {
   background: #ff9800;
 }
+
 /* 🔥 FIX PARA CELULAR */
 @media (max-width: 768px) {
 
@@ -452,7 +453,10 @@ html {
   header {
     justify-content: center;
   }
-/* 🔥 UBICACION PRO */
+
+} /* 🔥 ESTA LLAVE FALTABA */
+
+/* 🔥 UBICACION PRO (YA FUERA DEL MEDIA) */
 .ubicacion-pro {
   text-align: center;
   padding: 80px 20px;
