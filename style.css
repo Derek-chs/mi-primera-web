@@ -163,11 +163,10 @@ iframe {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: 
-    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-    url('https://www.mochomos.mx/img/galeria/restaurante/h9.jpg') no-repeat center center/cover;
   height: 100vh;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .overlay {
