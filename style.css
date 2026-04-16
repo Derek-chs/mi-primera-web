@@ -518,4 +518,9 @@ flex-direction: column;
 .mapa iframe {
 width: 100%;
 }
+/* 🔥 ARREGLO ESPACIO UBICACION */
+#ubicacion {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+    }
 }
