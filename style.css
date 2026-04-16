@@ -169,13 +169,13 @@ iframe {
   overflow: hidden;
 }
 
-/* VIDEO DE FONDO */
+/* VIDEO DE FONDO SOLO EN HOME */
 #bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;     /* 🔥 CAMBIADO */
+  height: 100%;    /* 🔥 CAMBIADO */
   object-fit: cover;
   z-index: 0;
 }
