@@ -32,7 +32,8 @@ header {
 /* LOGO A LA IZQUIERDA */
 .logo {
   position: absolute;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   font-weight: bold;
 }
 
