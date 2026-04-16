@@ -169,7 +169,21 @@ iframe {
   overflow: hidden;
 }
 
-.overlay {
+/* VIDEO DE FONDO */
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* TEXTO ENCIMA */
+#home .overlay {
+  position: relative;
+  z-index: 1;
   background: rgba(0,0,0,0.6);
   padding: 40px;
   border-radius: 15px;
