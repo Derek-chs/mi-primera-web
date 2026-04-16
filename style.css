@@ -16,6 +16,7 @@ header {
   justify-content: center;
   padding: 15px 0;
   z-index: 1000;
+  text-align: center; /* 🔥 agregado */
 }
 
 /* 🔥 BOTÓN MENU */
@@ -29,12 +30,13 @@ header {
   z-index: 2000;
 }
 
-/* LOGO A LA IZQUIERDA */
+/* LOGO CENTRADO */
 .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
+  text-align: center; /* 🔥 agregado */
 }
 
 /* NAV CENTRADO */
