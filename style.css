@@ -261,6 +261,14 @@ html {
   flex-direction: column;
   justify-content: center;
 }
+/* 🔥 ARREGLO REAL DEL ESPACIO */
+#ubicacion {
+  padding-top: 0 !important;
+}
+
+#ubicacion.section {
+  min-height: auto !important;
+}
 
 .mapa {
   width: 50%;
