@@ -486,12 +486,12 @@ color: white;
 /* LINEAS */
 .titulo-ubicacion::before,
 .titulo-ubicacion::after {
-content: "";
-display: block;
-width: 80px;
-height: 2px;
-background: gold;
-margin: 10px auto;
+  content: "";
+  display: block;
+  width: 150px; /* 🔥 MÁS LARGAS */
+  height: 3px;
+  background: gold;
+  margin: 10px auto;
 }
 
 /* CONTENIDO */
