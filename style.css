@@ -295,11 +295,23 @@ html {
   padding: 60px 20px;
 }
 
-/* TITULO GALERIA IZQUIERDA */
+/* 🔥 TITULO GALERIA CENTRADO */
 #gallery h2 {
-  text-align: left;
-  padding-left: 20px;
-  font-size: 32px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* 🔥 LINEAS ARRIBA Y ABAJO */
+#gallery h2::before,
+#gallery h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto;
 }
 
 /* GRID GALERIA */
