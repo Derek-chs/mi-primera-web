@@ -663,4 +663,141 @@ width: 100%;
   text-align: left;
   overflow-y: auto;
 }
+  /* ============================= */
+/* 🔥 MENÚ SOLO IMÁGENES PRO */
+/* ============================= */
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* CADA BLOQUE (pantalla completa) */
+.card {
+  height: 100vh; /* ocupa toda la pantalla */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* IMAGEN FULL */
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+/* ============================= */
+/* 🔥 EFECTO OSCURO (PRO) */
+/* ============================= */
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3); /* oscurece un poco */
+  top: 0;
+  left: 0;
+}
+
+/* ============================= */
+/* 🔥 HEADER SIEMPRE ARRIBA */
+/* ============================= */
+
+header {
+  z-index: 1000;
+}
+
+/* ============================= */
+/* 🔥 MODAL TIPO MOCHOMOS */
+/* ============================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+/* CUANDO SE ABRE */
+.modal.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENIDO */
+.modal-content.horizontal {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* BOTÓN CERRAR */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* IMAGEN IZQUIERDA */
+.modal-img {
+  width: 50%;
+}
+
+.modal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXTO DERECHA */
+.modal-info {
+  width: 50%;
+  padding: 30px;
+  text-align: left;
+  overflow-y: auto;
+  color: black;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE (CELULAR) */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .modal-content.horizontal {
+    flex-direction: column;
+    height: auto;
   }
+
+  .modal-img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .modal-info {
+    width: 100%;
+  }
+
+}
