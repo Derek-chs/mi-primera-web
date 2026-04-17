@@ -16,7 +16,7 @@ header {
   justify-content: center;
   padding: 15px 0;
   z-index: 1000;
-  text-align: center; /* 🔥 agregado */
+  text-align: center;
 }
 
 /* 🔥 BOTÓN MENU */
@@ -36,7 +36,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
-  text-align: center; /* 🔥 agregado */
+  text-align: center;
 }
 
 /* NAV CENTRADO */
@@ -172,13 +172,13 @@ iframe {
   overflow: hidden;
 }
 
-/* VIDEO DE FONDO SOLO EN HOME */
+/* VIDEO */
 #bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;     /* 🔥 CAMBIADO */
-  height: 100%;    /* 🔥 CAMBIADO */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
@@ -260,14 +260,6 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-/* 🔥 ARREGLO REAL DEL ESPACIO */
-#ubicacion {
-  padding-top: 0 !important;
-}
-
-#ubicacion.section {
-  min-height: auto !important;
 }
 
 .mapa {
@@ -389,9 +381,9 @@ text-align: center;
 padding: 60px 20px;
 }
 
-/* ========================= /
-/ 🔥 LO NUEVO (NO TOCA NADA) /
-/ ========================= */
+/* ========================= */
+/* 🔥 LO NUEVO (NO TOCA NADA) */
+/* ========================= */
 
 /* SLIDER */
 .slider {
@@ -416,7 +408,7 @@ display: inline-block;
 transition: 0.3s;
 }
 
-.slider img {
+.slider img:hover {
 transform: scale(1.1);
 }
 
@@ -443,7 +435,7 @@ border-radius: 10px;
 cursor: pointer;
 }
 
-.tabs button {
+.tabs button:hover {
 background: #ff9800;
 }
 
@@ -461,6 +453,8 @@ text-align: center;
 header {
 justify-content: center;
 }
+
+} /* 🔥 CIERRE CORRECTO */
 
 /* 🔥 UBICACION PRO */
 .ubicacion-pro {
@@ -517,7 +511,7 @@ border: none;
 border-radius: 10px;
 }
 
-/* 📱 CELULAR */
+/* 📱 CELULAR UBICACION */
 @media (max-width: 768px) {
 .ubicacion-container {
 flex-direction: column;
@@ -526,5 +520,4 @@ flex-direction: column;
 .mapa iframe {
 width: 100%;
 }
-
 }
