@@ -463,12 +463,15 @@ justify-content: center;
 }
 
 /* 🔥 UBICACION PRO */
+/* 🔥 UBICACION PRO */
 .ubicacion-pro {
 text-align: center;
 padding: 80px 20px;
 background:
 linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat center center/cover;
+url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat;
+background-size: cover;
+background-position: center top; /* 🔥 AQUI SE SUBE LA IMAGEN */
 color: white;
 }
 
