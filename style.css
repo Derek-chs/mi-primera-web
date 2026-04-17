@@ -477,10 +477,11 @@ color: white;
 
 /* TITULO */
 .titulo-ubicacion {
-font-size: 35px;
-margin-bottom: 40px;
-position: relative;
-text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
+  margin-top: -40px; /* 🔥 ESTO LO SUBE */
+  position: relative;
+  text-align: center;
 }
 
 /* LINEAS */
