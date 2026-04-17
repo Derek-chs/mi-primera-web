@@ -799,5 +799,15 @@ header {
   .modal-info {
     width: 100%;
   }
-
+body {
+  background: black !important;
 }
+
+.home {
+  background: none !important;
+}
+
+.section {
+  background: none !important;
+}
+  }
