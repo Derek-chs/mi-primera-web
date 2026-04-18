@@ -30,15 +30,15 @@ menu-toggle {
   z-index: 2000;
 }
 
-/*.menu-container {
+.menu-container {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   padding: 40px;
 }
-/* LOGO CENTRADO */
-/*.logo {
+/*LOGO CENTRADO */
+.logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
