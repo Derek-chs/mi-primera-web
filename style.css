@@ -19,8 +19,8 @@ header {
   text-align: center; /* 🔥 agregado */
 }
 
-/* 🔥 BOTÓN MENU */
-/*.menu-toggle {
+🔥 BOTÓN MENU */
+menu-toggle {
   display: none;
   position: absolute;
   left: 15px;
@@ -30,7 +30,7 @@ header {
   z-index: 2000;
 }
 
-.menu-container {
+/*.menu-container {
   display: flex;
   justify-content: center;
   gap: 30px;
