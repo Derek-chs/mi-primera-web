@@ -62,15 +62,6 @@ nav a {
   text-align: center;
 }
 
-/* MENÚ */
-.menu-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 40px;
-}
-
 .card {
   background: #f5f5f5;
   width: 260px;
