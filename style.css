@@ -192,4 +192,112 @@ button {
     width: 90%;
   }
 
+/* ========================= */
+/* 🔥 GALERIA */
+/* ========================= */
+
+#gallery {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg') no-repeat center/cover;
+  padding: 60px 20px;
+}
+
+/* TITULO */
+#gallery h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* LINEAS DECORATIVAS */
+#gallery h2::before,
+#gallery h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto;
+}
+
+/* ========================= */
+/* 🔥 TABS */
+/* ========================= */
+
+.tabs {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tabs button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background: #ff9800;
+}
+
+/* ========================= */
+/* 🔥 SLIDER HORIZONTAL */
+/* ========================= */
+
+.slider {
+  display: none;
+  overflow-x: auto;
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.slider.active {
+  display: flex;
+}
+
+/* IMÁGENES */
+.slider img {
+  flex: 0 0 auto;
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* SCROLL BONITO */
+.slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #ff9800;
+  border-radius: 10px;
+}
+
+/* ========================= */
+/* 🔥 RESPONSIVE GALERIA */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .slider img {
+    width: 180px;
+    height: 120px;
+  }
+
+}
+  
 }
