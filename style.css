@@ -19,8 +19,8 @@ header {
   text-align: center; /* 🔥 agregado */
 }
 
-🔥 BOTÓN MENU */
-menu-toggle {
+/*🔥 BOTÓN MENU */
+.menu-toggle {
   display: none;
   position: absolute;
   left: 15px;
@@ -615,7 +615,6 @@ text-align: center;
 height: 250px;
 }
 
-}
 /* MAPA */
 .mapa iframe {
 width: 300px;
@@ -645,7 +644,7 @@ width: 100%;
   overflow: hidden;
 }
 
-  modal-img {
+  .modal-img {
   width: 50%;
 }
 
