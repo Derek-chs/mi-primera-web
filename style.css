@@ -47,7 +47,7 @@ menu-toggle {
 }
 
 /* NAV CENTRADO */
-/*nav {
+nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@ nav a {
 }
 
 /* SECCIONES */
-/*.section {
+.section {
   display: block;
   padding: 100px 20px;
   min-height: 100vh;
@@ -115,7 +115,7 @@ nav a {
 }
 
 /* GALERÍA */
-/*.gallery {
+.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
@@ -141,7 +141,7 @@ nav a {
 }
 
 /* BOTÓN */
-/*button {
+button {
   padding: 10px 20px;
   background: green;
   border: none;
@@ -151,7 +151,7 @@ nav a {
 }
 
 /* MAPA */
-/*iframe {
+iframe {
   width: 100%;
   height: 300px;
   margin-top: 20px;
@@ -159,7 +159,7 @@ nav a {
 }
 
 /* HOME */
-/*.home {
+.home {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,7 +182,7 @@ nav a {
 }
 
 /* TEXTO ENCIMA */
-/*#home .overlay {
+#home .overlay {
   position: relative;
   z-index: 1;
   background: rgba(0,0,0,0.6);
@@ -191,7 +191,7 @@ nav a {
 }
 
 /* MODAL */
-/*.modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 9999;
@@ -233,12 +233,12 @@ nav a {
 }
 
 /* EXTRA */
-/*html {
+html {
   scroll-behavior: smooth;
 }
 
 /* UBICACIÓN */
-/*.ubicacion-container {
+.ubicacion-container {
   display: flex;
   width: 100%;
   min-height: 500px;
@@ -261,7 +261,7 @@ nav a {
 }
 /* 🔥 ARREGLO REAL DEL ESPACIO */
 /* 🔥 ARREGLO REAL DEL ESPACIO */
-/*#ubicacion {
+#ubicacion {
   padding-top: 0 !important;
 }
 
@@ -288,13 +288,13 @@ nav a {
 }
 
 /* 🔥 GALERIA PRO */
-/*#gallery {
+#gallery {
   min-height: auto; /* 🔥 ya no gigante */
- /* padding: 60px 20px;
+  padding: 60px 20px;
 }
 
 /* 🔥 TITULO GALERIA CENTRADO */
-/*#gallery h2 {
+#gallery h2 {
   text-align: center;
   font-size: 35px;
   margin-bottom: 30px;
@@ -302,7 +302,7 @@ nav a {
 }
 
 /* 🔥 LINEAS ARRIBA Y ABAJO */
-/*#gallery h2::before,
+#gallery h2::before,
 #gallery h2::after {
   content: "";
   display: block;
@@ -313,7 +313,7 @@ nav a {
 }
 
 /* GRID GALERIA */
-/*.gallery {
+.gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -321,10 +321,10 @@ nav a {
 }
 
 /* IMAGENES MAS COMPACTAS */
-/*.gallery img {
+.gallery img {
   width: 100%;
   height: 140px; /* 🔥 MAS PEQUEÑAS */
-/*  object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
   transition: 0.3s;
 }
@@ -334,7 +334,7 @@ nav a {
 }
 
 /* 🔥 RESPONSIVE */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
 body {
 overflow-x: hidden;
@@ -400,7 +400,7 @@ width: 90%;
 }
 
 /* 🔥 GALERIA CELULAR (TIPO MOCHOMOS SCROLL) */
-/*.gallery {
+.gallery {
   display: flex;
   overflow-x: auto;
   gap: 10px;
@@ -410,11 +410,11 @@ width: 90%;
 
 .gallery img {
   min-width: 250px; /* 🔥 SCROLL HORIZONTAL */
- /* height: 150px;
+ /height: 150px;
 }
 
 /* UBICACION */
-/*.ubicacion-container {
+.ubicacion-container {
 flex-direction: column;
 }
 
@@ -439,7 +439,7 @@ height: 250px;
 }
 
 /* 🔥 FOOTER */
-/*.footer {
+.footer {
 background: black;
 text-align: center;
 padding: 60px 20px;
@@ -450,7 +450,7 @@ padding: 60px 20px;
 /* ========================= */
 
 /* SLIDER */
-/*.slider {
+.slider {
 display: none;
 overflow-x: auto;
 white-space: nowrap;
@@ -486,7 +486,7 @@ border-radius: 10px;
 }
 
 /* TABS */
-/*.tabs {
+.tabs {
 margin-bottom: 20px;
 }
 
@@ -504,7 +504,7 @@ background: #ff9800;
 }
 
 /* 🔥 FIX PARA CELULAR */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
 .logo {
 position: absolute;
@@ -520,7 +520,7 @@ justify-content: center;
 
 /* 🔥 UBICACION PRO */
 /* 🔥 UBICACION PRO */
-/*.ubicacion-pro {
+.ubicacion-pro {
 text-align: center;
 padding: 80px 20px;
 background:
@@ -528,52 +528,52 @@ linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
 url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat;
 background-size: cover;
 background-position: center top; /* 🔥 AQUI SE SUBE LA IMAGEN */
-/*color: white;
+color: white;
 }
 
 .titulo-ubicacion {
   font-size: 35px;
   margin-bottom: 40px;
   margin-top: -40px; /* 🔥 ESTO LO SUBE */
-/*  position: relative;
+  position: relative;
   text-align: center;
 }
 
 /* LINEAS */
-/*.titulo-ubicacion::before,
+.titulo-ubicacion::before,
 .titulo-ubicacion::after {
   content: "";
   display: block;
   width: 150px; /* 🔥 MÁS LARGAS */
-/*  height: 3px;
+  height: 3px;
   background: gold;
   margin: 10px auto;
 }
 
 /* CONTENIDO */
-/*.ubicacion-container {
+.ubicacion-container {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between; /* 🔥 MEJORADO */
-/*align-items: center;
+align-items: center;
 gap: 40px; /* 🔥 MÁS ESPACIO */
 /*}
 
 /* TEXTO */
-/*.info {
+.info {
 max-width: 500px; /* 🔥 MÁS ANCHO */
-/*text-align: left; /* 🔥 COMO MOCHOMOS */
-/*}
+text-align: left; /* 🔥 COMO MOCHOMOS */
+}
 
 /* DESCRIPCION */
-/*.descripcion {
+.descripcion {
 margin-top: 15px;
 opacity: 0.9;
 line-height: 1.5;
 }
 
 /* SERVICIOS */
-/*.servicios {
+.servicios {
 margin-top: 30px;
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -582,7 +582,7 @@ text-align: left;
 }
 
 /* MAPA */
-/*.mapa {
+.mapa {
 flex: 1;
 min-width: 300px;
 }
@@ -594,8 +594,8 @@ border: none;
 border-radius: 10px;
 }
 
-/* 📱 RESPONSIVE */
-/*@media (max-width: 768px) {
+ 📱 RESPONSIVE */
+@media (max-width: 768px) {
 
 .ubicacion-container {
 flex-direction: column;
@@ -617,7 +617,7 @@ height: 250px;
 
 }
 /* MAPA */
-/*.mapa iframe {
+.mapa iframe {
 width: 300px;
 height: 250px;
 border: none;
@@ -625,18 +625,18 @@ border-radius: 10px;
 }
 
 /* 📱 CELULAR */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 .ubicacion-container {
 flex-direction: column;
 }
 
-/*.mapa iframe {
+.mapa iframe {
 width: 100%;
 }
 
 /* ===== MODAL TIPO MOCHOMOS ===== */
 
-/*.modal-content.horizontal {
+.modal-content.horizontal {
   display: flex;
   width: 90%;
   max-width: 1000px;
@@ -645,17 +645,17 @@ width: 100%;
   overflow: hidden;
 }
 
-/*.modal-img {
+  modal-img {
   width: 50%;
 }
 
-/*.modal-img img {
+  .modal-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/*.modal-info {
+  .modal-info {
   width: 50%;
   padding: 30px;
   text-align: left;
@@ -665,7 +665,7 @@ width: 100%;
 /* 🔥 MENÚ SOLO IMÁGENES PRO */
 /* ============================= */
 
-/*.menu-container {
+  .menu-container {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -673,7 +673,7 @@ width: 100%;
 }
 
 /* CADA BLOQUE (pantalla completa) */
-/*.card {
+  .card {
   height: 100vh; /* ocupa toda la pantalla */
   /*position: relative;
   overflow: hidden;
@@ -683,7 +683,7 @@ width: 100%;
 }
 
 /* IMAGEN FULL */
-/*.card img {
+  .card img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -696,7 +696,7 @@ width: 100%;
 /* 🔥 EFECTO OSCURO (PRO) */
 /* ============================= */
 
-/*.card::after {
+  .card::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -710,7 +710,7 @@ width: 100%;
 /* 🔥 HEADER SIEMPRE ARRIBA */
 /* ============================= */
 
-/*header {
+  header {
   z-index: 1000;
 }
 
@@ -718,7 +718,7 @@ width: 100%;
 /* 🔥 MODAL TIPO MOCHOMOS */
 /* ============================= */
 
-/*.modal {
+  .modal {
   display: none;
   position: fixed;
   z-index: 2000;
@@ -737,7 +737,7 @@ width: 100%;
 }
 
 /* CONTENIDO */
-/*.modal-content.horizontal {
+  .modal-content.horizontal {
   display: flex;
   width: 90%;
   max-width: 1000px;
@@ -749,7 +749,7 @@ width: 100%;
 }
 
 /* BOTÓN CERRAR */
-/*.cerrar {
+  .cerrar {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -759,18 +759,18 @@ width: 100%;
 }
 
 /* IMAGEN IZQUIERDA */
-/*.modal-img {
+  .modal-img {
   width: 50%;
 }
 
-/*.modal-img img {
+  .modal-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 /* TEXTO DERECHA */
-/*.modal-info {
+  .modal-info {
   width: 50%;
   padding: 30px;
   text-align: left;
@@ -782,7 +782,7 @@ width: 100%;
 /* 📱 RESPONSIVE (CELULAR) */
 /* ============================= */
 
-/*@media (max-width: 768px) {
+  @media (max-width: 768px) {
 
   .modal-content.horizontal {
     flex-direction: column;
@@ -798,4 +798,4 @@ width: 100%;
     width: 100%;
   }
 
-  }*/
+  }
