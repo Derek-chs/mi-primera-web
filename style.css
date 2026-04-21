@@ -24,194 +24,88 @@ header {
   justify-content: center;
   padding: 15px 0;
   z-index: 1000;
+  text-align: center;
 }
 
+/* BOTÓN MENU */
 .menu-toggle {
   display: none;
   position: absolute;
   left: 15px;
+  top: 15px;
   font-size: 28px;
   cursor: pointer;
+  z-index: 2000;
 }
 
+/* LOGO */
 .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: bold;
 }
 
 /* NAV */
 nav {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
   margin: 0 15px;
-  color: white;
+  cursor: pointer;
   text-decoration: none;
+  color: white;
 }
 
 /* SECCIONES */
 .section {
   padding: 100px 20px;
   min-height: 100vh;
+  background: rgba(0,0,0,0.6);
   text-align: center;
 }
 
 /* HOME */
 .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 100vh;
+  box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
+/* VIDEO DE FONDO */
 #bg-video {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
-.overlay {
+/* TEXTO ENCIMA */
+#home .overlay {
   position: relative;
   z-index: 1;
-  padding: 40px;
   background: rgba(0,0,0,0.6);
+  padding: 40px;
   border-radius: 15px;
 }
 
-/* ========================= */
-/* 🔥 MENU */
-/* ========================= */
-
-.menu-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card img {
-  width: 260px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* ========================= */
-/* 🔥 SLIDER (GALERIA) */
-/* ========================= */
-
-.slider {
-  display: none;
-  overflow-x: auto;
-  display: flex;
-  gap: 15px;
-  padding: 20px;
-  scroll-behavior: smooth;
-}
-
-.slider.active {
-  display: flex;
-}
-
-/* 🔥 IMÁGENES PEQUEÑAS */
-.slider img {
-  flex: 0 0 auto;
-  width: 220px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.slider img:hover {
-  transform: scale(1.05);
-}
-
-/* SCROLL BONITO */
-.slider::-webkit-scrollbar {
-  height: 6px;
-}
-
-.slider::-webkit-scrollbar-thumb {
-  background: orange;
-  border-radius: 10px;
-}
-
-/* BOTONES */
-.tabs {
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  margin: 5px;
+/* BOTÓN */
+button {
   padding: 10px 20px;
-  background: #333;
-  color: white;
+  background: green;
   border: none;
+  color: white;
   border-radius: 10px;
   cursor: pointer;
-}
-
-/* ========================= */
-/* 🔥 UBICACION */
-/* ========================= */
-
-.ubicacion-container {
-  display: flex;
-}
-
-.info {
-  width: 50%;
-  padding: 40px;
-}
-
-.mapa {
-  width: 50%;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 400px;
-}
-
-/* ========================= */
-/* 🔥 RESPONSIVE */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    position: fixed;
-    left: -100%;
-    top: 0;
-    width: 70%;
-    height: 100%;
-    background: black;
-    flex-direction: column;
-    padding-top: 80px;
-    transition: 0.3s;
-  }
-
-  nav.active {
-    left: 0;
-  }
-
-  .menu-container {
-    flex-direction: column;
-  }
-
-  .ubicacion-container {
-    flex-direction: column;
-  }
-
-  .info, .mapa {
-    width: 100%;
-  }
-
 }
