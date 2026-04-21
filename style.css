@@ -171,13 +171,13 @@ iframe {
 }
 
 /* VIDEO DE FONDO SOLO EN HOME */
-/*#bg-video {
+#bg-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;     /* 🔥 CAMBIADO */
- /* height: 100%;    /* 🔥 CAMBIADO */
- /* object-fit: cover;
+ height: 100%;    /* 🔥 CAMBIADO */
+  object-fit: cover;
   z-index: 0;
 }
 
