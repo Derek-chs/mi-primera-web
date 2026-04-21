@@ -1,8 +1,16 @@
+/* ========================= */
+/* 🔥 INICIO */
+/* ========================= */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: black; /* o white si prefieres */
+  background: black;
   color: white;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -16,10 +24,10 @@ header {
   justify-content: center;
   padding: 15px 0;
   z-index: 1000;
-  text-align: center; /* 🔥 agregado */
+  text-align: center;
 }
 
-/*🔥 BOTÓN MENU */
+/* BOTÓN MENU */
 .menu-toggle {
   display: none;
   position: absolute;
@@ -30,23 +38,15 @@ header {
   z-index: 2000;
 }
 
-.menu-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  padding: 40px;
-}
-/*LOGO CENTRADO */
+/* LOGO */
 .logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
-  text-align: center; /* 🔥 agregado */
 }
 
-/* NAV CENTRADO */
+/* NAV */
 nav {
   display: flex;
   justify-content: center;
@@ -55,18 +55,56 @@ nav {
 
 nav a {
   margin: 0 15px;
-  cursor: pointer;
   text-decoration: none;
   color: white;
 }
 
 /* SECCIONES */
 .section {
-  display: block;
   padding: 100px 20px;
   min-height: 100vh;
   background: rgba(0,0,0,0.6);
   text-align: center;
+}
+
+/* HOME */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home .overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* ========================= */
+/* 🔥 MENU */
+/* ========================= */
+
+#menu {
+  background: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .card {
@@ -75,12 +113,7 @@ nav a {
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-#menu {
-  background: none;
+  transition: 0.3s;
 }
 
 .card:hover {
@@ -98,210 +131,34 @@ nav a {
 }
 
 .card h3 {
-  margin: 10px 0;
-  font-size: 18px;
   color: #333;
 }
 
 .price {
   color: #888;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .card p {
-  font-size: 14px;
   color: #555;
 }
 
-/* GALERÍA */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-}
+/* ========================= */
+/* 🔥 GALERIA */
+/* ========================= */
 
 #gallery {
+  padding: 60px 20px;
   background: 
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-    url('https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg') no-repeat center center/cover;
+    url('https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg') no-repeat center/cover;
 }
 
-.gallery img {
-  width: 100%;
-  height:200px;
-  object-fit:cover;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
-/* BOTÓN */
-button {
-  padding: 10px 20px;
-  background: green;
-  border: none;
-  color: white;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/* MAPA */
-iframe {
-  width: 100%;
-  height: 300px;
-  margin-top: 20px;
-  border: none;
-}
-
-/* HOME */
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-
-/* VIDEO DE FONDO SOLO EN HOME */
-#bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;     /* 🔥 CAMBIADO */
- height: 100%;    /* 🔥 CAMBIADO */
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* TEXTO ENCIMA */
-#home .overlay {
-  position: relative;
-  z-index: 1;
-  background: rgba(0,0,0,0.6);
-  padding: 40px;
-  border-radius: 15px;
-}
-
-/* MODAL */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-}
-
-.modal.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-content {
-  background: white;
-  color: black;
-  width: 350px;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
-  position: relative;
-}
-
-.modal-content img {
-  width: 100%;
-  border-radius: 15px;
-  margin: 10px 0;
-}
-
-.cerrar {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-/* EXTRA */
-html {
-  scroll-behavior: smooth;
-}
-
-/* UBICACIÓN */
-.ubicacion-container {
-  display: flex;
-  width: 100%;
-  min-height: 500px;
-}
-
-#ubicacion {
-  background: 
-    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat center center/cover;
-  padding: 0;
-}
-
-.info {
-  width: 50%;
-  padding: 60px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-/* 🔥 ARREGLO REAL DEL ESPACIO */
-/* 🔥 ARREGLO REAL DEL ESPACIO */
-#ubicacion {
-  padding-top: 0 !important;
-}
-
-#ubicacion.section {
-  min-height: auto !important;
-}
-
-.mapa {
-  width: 50%;
-}
-
-.mapa iframe {
-  width: 100%;
-  height: 100%;
-  min-height: 500px;
-  border: none;
-}
-
-.servicios {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-/* 🔥 GALERIA PRO */
-#gallery {
-  min-height: auto; /* 🔥 ya no gigante */
-  padding: 60px 20px;
-}
-
-/* 🔥 TITULO GALERIA CENTRADO */
 #gallery h2 {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 30px;
-  position: relative;
 }
 
-/* 🔥 LINEAS ARRIBA Y ABAJO */
 #gallery h2::before,
 #gallery h2::after {
   content: "";
@@ -312,18 +169,15 @@ html {
   margin: 10px auto;
 }
 
-/* GRID GALERIA */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding: 0 20px;
 }
 
-/* IMAGENES MAS COMPACTAS */
 .gallery img {
   width: 100%;
-  height: 140px; /* 🔥 MAS PEQUEÑAS */
+  height: 140px;
   object-fit: cover;
   border-radius: 12px;
   transition: 0.3s;
@@ -333,468 +187,92 @@ html {
   transform: scale(1.05);
 }
 
-/* 🔥 RESPONSIVE */
-@media (max-width: 768px) {
-
-body {
-overflow-x: hidden;
-}
-
-header {
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
-.menu-toggle {
-display: block;
-}
-
-nav {
-position: fixed;
-top: 0;
-left: -100%;
-width: 70%;
-height: 100%;
-background: black;
-flex-direction: column;
-padding-top: 80px;
-transition: 0.3s;
-}
-
-nav.active {
-left: 0;
-}
-
-nav a {
-padding: 15px;
-font-size: 18px;
-border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.home {
-padding-top: 150px;
-height: auto;
-}
-
-.overlay {
-padding: 20px;
-}
-
-.overlay h1 {
-font-size: 24px;
-}
-
-.overlay p {
-font-size: 14px;
-}
-
-.menu-container {
-flex-direction: column;
-align-items: center;
-padding: 20px;
-}
-
-.card {
-width: 90%;
-}
-
-/* 🔥 GALERIA CELULAR (TIPO MOCHOMOS SCROLL) */
-.gallery {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 20px;
-  scroll-behavior: smooth;
-}
-
-.gallery img {
-  min-width: 250px; /* 🔥 SCROLL HORIZONTAL */
- /height: 150px;
-}
-
-/* UBICACION */
-.ubicacion-container {
-flex-direction: column;
-}
-
-.info, .mapa {
-width: 100%;
-padding: 20px;
-box-sizing: border-box;
-}
-
-.servicios {
-grid-template-columns: 1fr;
-}
-
-.mapa iframe {
-min-height: 250px;
-}
-
-iframe {
-height: 250px;
-}
-
-}
-
-/* 🔥 FOOTER */
-.footer {
-background: black;
-text-align: center;
-padding: 60px 20px;
-}
-
 /* ========================= */
-/* 🔥 LO NUEVO (NO TOCA NADA) */
+/* 🔥 UBICACIÓN */
 /* ========================= */
 
-/* SLIDER */
-.slider {
-display: none;
-overflow-x: auto;
-white-space: nowrap;
-scroll-behavior: smooth;
-padding: 20px;
-}
-
-.slider.active {
-display: block;
-}
-
-.slider img {
-width: 250px;
-height: 160px;
-object-fit: cover;
-margin: 10px;
-border-radius: 15px;
-display: inline-block;
-transition: 0.3s;
-}
-
-.slider img:hover {
-transform: scale(1.1);
-}
-
-.slider::-webkit-scrollbar {
-height: 8px;
-}
-
-.slider::-webkit-scrollbar-thumb {
-background: #ff9800;
-border-radius: 10px;
-}
-
-/* TABS */
-.tabs {
-margin-bottom: 20px;
-}
-
-.tabs button {
-margin: 5px;
-padding: 10px 20px;
-background: #333;
-color: white;
-border-radius: 10px;
-cursor: pointer;
-}
-
-.tabs button:hover {
-background: #ff9800;
-}
-
-/* 🔥 FIX PARA CELULAR */
-@media (max-width: 768px) {
-
-.logo {
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-width: 100%;
-text-align: center;
-}
-
-header {
-justify-content: center;
-}
-
-/* 🔥 UBICACION PRO */
-/* 🔥 UBICACION PRO */
-.ubicacion-pro {
-text-align: center;
-padding: 80px 20px;
-background:
-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
-url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat;
-background-size: cover;
-background-position: center top; /* 🔥 AQUI SE SUBE LA IMAGEN */
-color: white;
-}
-
-.titulo-ubicacion {
-  font-size: 35px;
-  margin-bottom: 40px;
-  margin-top: -40px; /* 🔥 ESTO LO SUBE */
-  position: relative;
-  text-align: center;
-}
-
-/* LINEAS */
-.titulo-ubicacion::before,
-.titulo-ubicacion::after {
-  content: "";
-  display: block;
-  width: 150px; /* 🔥 MÁS LARGAS */
-  height: 3px;
-  background: gold;
-  margin: 10px auto;
-}
-
-/* CONTENIDO */
-.ubicacion-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between; /* 🔥 MEJORADO */
-align-items: center;
-gap: 40px; /* 🔥 MÁS ESPACIO */
-/*}
-
-/* TEXTO */
-.info {
-max-width: 500px; /* 🔥 MÁS ANCHO */
-text-align: left; /* 🔥 COMO MOCHOMOS */
-}
-
-/* DESCRIPCION */
-.descripcion {
-margin-top: 15px;
-opacity: 0.9;
-line-height: 1.5;
-}
-
-/* SERVICIOS */
-.servicios {
-margin-top: 30px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 15px;
-text-align: left;
-}
-
-/* MAPA */
-.mapa {
-flex: 1;
-min-width: 300px;
-}
-
-.mapa iframe {
-width: 100%;
-height: 350px;
-border: none;
-border-radius: 10px;
-}
-
- 📱 RESPONSIVE */
-@media (max-width: 768px) {
-
-.ubicacion-container {
-flex-direction: column;
-align-items: center;
-}
-
-.info {
-text-align: center;
-}
-
-.servicios {
-grid-template-columns: 1fr;
-text-align: center;
-}
-
-.mapa iframe {
-height: 250px;
-}
-
-/* MAPA */
-.mapa iframe {
-width: 300px;
-height: 250px;
-border: none;
-border-radius: 10px;
-}
-
-/* 📱 CELULAR */
-@media (max-width: 768px) {
-.ubicacion-container {
-flex-direction: column;
-}
-
-.mapa iframe {
-width: 100%;
-}
-
-/* ===== MODAL TIPO MOCHOMOS ===== */
-
-.modal-content.horizontal {
-  display: flex;
-  width: 90%;
-  max-width: 1000px;
-  height: 500px;
+#ubicacion {
+  background: 
+    linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+    url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') no-repeat center/cover;
   padding: 0;
-  overflow: hidden;
 }
 
-  .modal-img {
+.ubicacion-container {
+  display: flex;
+  min-height: 500px;
+}
+
+.info {
+  width: 50%;
+  padding: 60px;
+}
+
+.mapa {
   width: 50%;
 }
 
-  .modal-img img {
+.mapa iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  min-height: 500px;
 }
 
-  .modal-info {
-  width: 50%;
-  padding: 30px;
-  text-align: left;
-  overflow-y: auto;
+.servicios {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-  /* ============================= */
-/* 🔥 MENÚ SOLO IMÁGENES PRO */
-/* ============================= */
+
+/* ========================= */
+/* 🔥 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: black;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: 0.3s;
+  }
+
+  nav.active {
+    left: 0;
+  }
 
   .menu-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-/* CADA BLOQUE (pantalla completa) */
-  .card {
-  height: 100vh; /* ocupa toda la pantalla */
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-/* IMAGEN FULL */
-  .card img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-}
-
-/* ============================= */
-/* 🔥 EFECTO OSCURO (PRO) */
-/* ============================= */
-
-  .card::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3); /* oscurece un poco */
-  /top: 0;
-  left: 0;
-}
-
-/* ============================= */
-/* 🔥 HEADER SIEMPRE ARRIBA */
-/* ============================= */
-
-  header {
-  z-index: 1000;
-}
-
-/* ============================= */
-/* 🔥 MODAL TIPO MOCHOMOS */
-/* ============================= */
-
-  .modal {
-  display: none;
-  position: fixed;
-  z-index: 2000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-}
-
-/* CUANDO SE ABRE */
-  .modal.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CONTENIDO */
-  .modal-content.horizontal {
-  display: flex;
-  width: 90%;
-  max-width: 1000px;
-  height: 500px;
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* BOTÓN CERRAR */
-  .cerrar {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 25px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-/* IMAGEN IZQUIERDA */
-  .modal-img {
-  width: 50%;
-}
-
-  .modal-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* TEXTO DERECHA */
-  .modal-info {
-  width: 50%;
-  padding: 30px;
-  text-align: left;
-  overflow-y: auto;
-  color: black;
-}*/
-
-/* ============================= */
-/* 📱 RESPONSIVE (CELULAR) */
-/* ============================= */
-
-  @media (max-width: 768px) {
-
-  .modal-content.horizontal {
     flex-direction: column;
-    height: auto;
   }
 
-  .modal-img {
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .gallery img {
+    min-width: 250px;
+    height: 150px;
+  }
+
+  .ubicacion-container {
+    flex-direction: column;
+  }
+
+  .info, .mapa {
     width: 100%;
-    height: 250px;
   }
 
-  .modal-info {
-    width: 100%;
-  }
-
-  }
+}
