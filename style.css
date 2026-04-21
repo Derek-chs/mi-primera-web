@@ -675,7 +675,7 @@ width: 100%;
 /* CADA BLOQUE (pantalla completa) */
   .card {
   height: 100vh; /* ocupa toda la pantalla */
-  /*position: relative;
+  position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -702,7 +702,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.3); /* oscurece un poco */
-  /*top: 0;
+  /top: 0;
   left: 0;
 }
 
@@ -730,7 +730,7 @@ width: 100%;
 }
 
 /* CUANDO SE ABRE */
-/*.modal.active {
+  .modal.active {
   display: flex;
   justify-content: center;
   align-items: center;
