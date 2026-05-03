@@ -15,27 +15,19 @@ html {
 
 /* HEADER */
 
-
-
 header {
-    position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* 🔥 clave */
+    justify-content: space-between;
   padding: 15px 30px;
-  z-index: 1000;
 }
 /* LOGO */
 .logo {
-  font-weigth: bold;
+  position: static; 
 }
 /* NAV */
 nav {
   display: flex;
-  gap 25px; /* 🔥 separación real */
+  gap 25px /* 🔥 separación real */
+  
 }
 nav a {
   text-decoration: none;
@@ -220,7 +212,7 @@ button:hover {
     width: 90%;
   }
 
-  /* MENU PRO EN CELULAR */
+}/* MENU PRO EN CELULAR */
   .menu-container.pro {
     grid-template-columns: 1fr;
   }
