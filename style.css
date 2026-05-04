@@ -221,7 +221,7 @@ button:hover {
     width: 90%;
   }
 
-}/* MENU PRO EN CELULAR */
+/* MENU PRO EN CELULAR */
   .menu-container.pro {
     grid-template-columns: 1fr;
   }
@@ -372,7 +372,7 @@ button:hover {
 /* CONTENEDOR PRINCIPAL */
 .ubicacion-container {
   display: flex;
-  flex-direction: row; /* lado a lado */
+  flex-direction: row; /* 🔥 importante */
   justify-content: space-between;
   align-items: center;
   gap: 40px;
@@ -418,8 +418,8 @@ button:hover {
 @media (max-width: 768px) {
 
   .ubicacion-container {
-    flex-direction: column; /*uno de bajo del otro( cel)*/
-    gap: 30px;
+    flex-direction: column;
+    align-item: center;
   }
 
   .info {
