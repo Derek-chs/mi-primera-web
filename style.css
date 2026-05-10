@@ -788,6 +788,32 @@ button:hover {
   .mapa iframe{
     height: 350px;
   }
+/* 🔥 FIX MOBILE CENTRADO */
+@media(max-width:768px){
+
+  html,
+  body{
+    overflow-x: hidden;
+  }
+
+  .ubicacion-container{
+    align-items: center;
+  }
+
+  .info,
+  .mapa{
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+  }
+
+  .servicios p{
+    width: 100%;
+
+    box-sizing: border-box;
+  }
 
 }
 /* ========================= */
