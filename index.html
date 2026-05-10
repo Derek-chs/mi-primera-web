@@ -91,37 +91,94 @@
   </div>
 </section>
   
+<!-- ========================= -->
+<!-- 🔥 GALERIA PREMIUM -->
+<!-- ========================= -->
+
 <section id="gallery" class="section">
-  <h2>Galeria</h2>
 
-  <!-- 🔥 AGREGADO: BOTONES -->
-  <div class="tabs">
-    <button onclick="mostrarCategoria('galeria')">Galería</button>
-    <button onclick="mostrarCategoria('restaurante')">Restaurante</button>
+  <!-- 🔥 CONTENIDO -->
+  <div class="gallery-content">
+
+    <h2>Galería</h2>
+
+    <!-- 🔥 TABS -->
+    <div class="tabs">
+
+      <button
+        class="active-tab"
+        onclick="mostrarCategoria('galeria', this)"
+      >
+        Platillos
+      </button>
+
+      <button
+        onclick="mostrarCategoria('restaurante', this)"
+      >
+        Restaurante
+      </button>
+
+    </div>
+
   </div>
 
-  <!-- 🔥 AGREGADO: SLIDER 1 -->
+  <!-- 🔥 FLECHA IZQUIERDA -->
+  <div class="arrow left" onclick="moverSlide(-1)">
+    ❮
+  </div>
+
+  <!-- 🔥 FLECHA DERECHA -->
+  <div class="arrow right" onclick="moverSlide(1)">
+    ❯
+  </div>
+
+  <!-- ========================= -->
+  <!-- 🔥 SLIDER PLATILLOS -->
+  <!-- ========================= -->
+
   <div id="galeria" class="slider active">
-    <img src="https://www.mochomos.mx/img/galeria/platillos/filete-en-su-jugo.jpg">
 
-    <img src="https://www.mochomos.mx/img/galeria/platillos/atun-sastre.jpg">
+    <img
+      class="active-slide"
+      src="https://www.mochomos.mx/img/galeria/platillos/filete-en-su-jugo.jpg"
+    >
 
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+    <img
+      src="https://www.mochomos.mx/img/galeria/platillos/atun-sastre.jpg"
+    >
+
+    <img
+      src="https://www.mochomos.mx/img/galeria/platillos/rib-eye-anejo.jpg"
+    >
+
+    <img
+      src="https://www.mochomos.mx/img/galeria/platillos/tacos-de-marlin-con-pulpo.jpg"
+    >
+
   </div>
 
-  <!-- 🔥 AGREGADO: SLIDER 2 -->
+  <!-- ========================= -->
+  <!-- 🔥 SLIDER RESTAURANTE -->
+  <!-- ========================= -->
+
   <div id="restaurante" class="slider">
-    <img src="https://www.mochomos.mx/img/galeria/platillos/salmon-colorado.jpg">
 
-    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
-    
-    <img src="https://www.mochomos.mx/img/galeria/platillos/arrachera.jpg">
+    <img
+      class="active-slide"
+      src="https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg">
 
-    <img src="https://www.mochomos.mx/img/galeria/platillos/tomahak.jpg">
+    <img
+      src="https://www.mochomos.mx/img/galeria/restaurante/hermosillo.jpg"
+    >
 
-    <img src="https://www.mochomos.mx/img/galeria/platillos/tacos-de-marlin-con-pulpo.jpg">
+    <img
+      src="https://www.mochomos.mx/img/galeria/restaurante/mty.jpg"
+    >
 
-    <img src="https://www.mochomos.mx/img/galeria/platillos/rib-eye-anejo.jpg">
+    <img
+      src="https://www.mochomos.mx/img/galeria/restaurante/puebla.jpg"
+    >
+
   </div>
 
 </section>
