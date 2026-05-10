@@ -496,33 +496,6 @@ button:hover {
   border-radius: 10px;
 }
 
-/* ========================= */
-/* 🔥 RESPONSIVE */
-/* ========================= */
 
-@media (max-width: 768px) {
-
-  .ubicacion-container {
-    flex-direction: column;
-    align-item: center;
-  }
-
-  .info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .servicios {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .mapa {
-    width: 100%;
-  }
-
-  .mapa iframe {
-    height: 250px;
-  }
 
 }
