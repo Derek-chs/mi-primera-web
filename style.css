@@ -456,109 +456,221 @@ button:hover {
     height: 120px;
   }
 
-} /* ========================= */
-/* 🔥 UBICACIÓN */
+} 
+/* ========================= */
+/* 🔥 UBICACIÓN PREMIUM */
 /* ========================= */
 
-/* ========================= */
-/* 🔥 UBICACIÓN */
-/* ========================= */
-
-#ubicacion {
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)); /* 🔥 SIN IMAGEN */
-  padding: 80px 20px;
-  color: white;
-}
-
-/* TITULO */
-.titulo-ubicacion {
-  font-size: 35px;
-  margin-bottom: 40px;
-  text-align: center;
+#ubicacion{
   position: relative;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.88),
+    rgba(0,0,0,0.94)
+  ),
+
+  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1974&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 120px 50px;
+
+  color: white;
+
+  overflow: hidden;
 }
 
-/* LINEAS DECORATIVAS */
+/* 🔥 TITULO */
+.titulo-ubicacion{
+  position: relative;
+
+  font-size: 75px;
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 90px;
+
+  letter-spacing: 2px;
+}
+
+/* 🔥 LINEAS */
 .titulo-ubicacion::before,
-.titulo-ubicacion::after {
+.titulo-ubicacion::after{
   content: "";
-  display: block;
-  width: 150px;
-  height: 3px;
-  background: gold;
-  margin: 10px auto;
+
+  position: absolute;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 180px;
+  height: 5px;
+
+  background: #ffd700;
+
+  border-radius: 50px;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.ubicacion-container {
+/* 🔥 LINEA ARRIBA */
+.titulo-ubicacion::before{
+  top: -25px;
+}
+
+/* 🔥 LINEA ABAJO */
+.titulo-ubicacion::after{
+  bottom: -25px;
+}
+
+/* 🔥 CONTENEDOR */
+.ubicacion-container{
   display: flex;
-  flex-direction: row; /* 🔥 importante */
+
   justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
+  align-items: stretch;
 
-/* TEXTO */
-.info {
-  width: 50%;
-  max-width: 500px;
-  text-align: left;
-}
+  gap: 60px;
 
-.descripcion {
-  margin-top: 15px;
-  opacity: 0.9;
-  line-height: 1.5;
-}
-
-/* SERVICIOS */
-.servicios {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-/* MAPA */
-.mapa {
-  width: 50%;
-}
-
-.mapa iframe {
   width: 100%;
-  height: 350px;
-  border: none;
-  border-radius: 10px;
 }
+
+/* 🔥 INFO */
+.info{
+  width: 40%;
+
+  background:
+  rgba(0,0,0,0.45);
+
+  backdrop-filter: blur(8px);
+
+  padding: 45px;
+
+  border-radius: 18px;
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+  0 0 40px rgba(0,0,0,0.5);
+}
+
+/* 🔥 TEXTO */
+.info p{
+  font-size: 18px;
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+}
+
+.info strong{
+  color: #ffd700;
+}
+
+/* 🔥 DESCRIPCIÓN */
+.descripcion{
+  opacity: .92;
+
+  margin-top: 20px;
+
+  line-height: 1.8;
+}
+
+/* 🔥 SERVICIOS */
+.servicios{
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.servicios p{
+  background:
+  rgba(255,255,255,0.04);
+
+  padding: 15px;
+
+  border-radius: 12px;
+
+  transition: .3s;
+}
+
+/* 🔥 HOVER */
+.servicios p:hover{
+  transform: translateY(-5px);
+
+  background:
+  rgba(255,215,0,0.12);
+}
+
+/* 🔥 MAPA */
+.mapa{
+  width: 60%;
+}
+
+/* 🔥 IFRAME */
+.mapa iframe{
+  width: 100%;
+  height: 650px;
+
+  border: none;
+
+  border-radius: 20px;
+
+  box-shadow:
+  0 0 50px rgba(0,0,0,0.6);
+}
+
 /* ========================= */
-/* 🔥 RESPONSIVE */
+/* 📱 RESPONSIVE */
 /* ========================= */
 
-@media (max-width: 768px) {
+@media(max-width: 1100px){
 
-  .ubicacion-container {
+  .ubicacion-container{
     flex-direction: column;
-    align-item: center;
   }
 
-  .info {
+  .info,
+  .mapa{
     width: 100%;
-    text-align: center;
   }
 
-  .servicios {
+}
+
+/* 📱 CELULAR */
+@media(max-width:768px){
+
+  #ubicacion{
+    padding: 80px 20px;
+  }
+
+  .titulo-ubicacion{
+    font-size: 48px;
+    margin-bottom: 70px;
+  }
+
+  .titulo-ubicacion::before,
+  .titulo-ubicacion::after{
+    width: 120px;
+  }
+
+  .info{
+    padding: 30px;
+  }
+
+  .servicios{
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
-  .mapa {
-    width: 100%;
+  .mapa iframe{
+    height: 350px;
   }
-
-  .mapa iframe {
-    height: 250px;
-  }
-
 
 }
 /* ========================= */
