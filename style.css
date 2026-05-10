@@ -354,112 +354,216 @@ button:hover {
   }
 }
 /* ========================= */
-/* 🔥 GALERIA */
+/* 🔥 GALERIA PREMIUM */
 /* ========================= */
 
-#gallery {
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://www.mochomos.mx/img/galeria/restaurante/qro2.jpg') no-repeat center/cover;
-  padding: 60px 20px;
-}
-
-/* TITULO */
-#gallery h2 {
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 30px;
+#gallery{
   position: relative;
+
+  background: #000;
+
+  overflow: hidden;
+
+  padding: 0;
+
+  min-height: 100vh;
 }
 
-/* LINEAS DECORATIVAS */
-#gallery h2::before,
-#gallery h2::after {
-  content: "";
-  display: block;
-  width: 120px;
-  height: 3px;
-  background: gold;
-  margin: 10px auto;
-}
+/* 🔥 SLIDER */
+.slider{
+  position: relative;
 
-/* ========================= */
-/* 🔥 TABS */
-/* ========================= */
+  width: 100%;
+  height: 100vh;
 
-.tabs {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.tabs button {
-  margin: 5px;
-  padding: 10px 20px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.tabs button:hover {
-  background: #ff9800;
-}
-
-/* ========================= */
-/* 🔥 SLIDER HORIZONTAL */
-/* ========================= */
-
-.slider {
   display: none;
-  overflow-x: auto;
-  display: flex;
-  gap: 15px;
-  padding: 20px;
-  scroll-behavior: smooth;
+
+  overflow: hidden;
 }
 
-.slider.active {
-  display: flex;
+.slider.active{
+  display: block;
 }
 
-/* IMÁGENES */
-.slider img {
-  flex: 0 0 auto;
-  width: 220px;
-  height: 140px;
+/* 🔥 IMAGENES */
+.slider img{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
   object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s;
+
+  opacity: 0;
+
+  transition: opacity 1s ease;
+
+  filter: brightness(0.55);
+}
+
+/* 🔥 IMAGEN ACTIVA */
+.slider img.active-slide{
+  opacity: 1;
+}
+
+/* 🔥 OVERLAY */
+#gallery::before{
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.65)
+  );
+
+  z-index: 2;
+}
+
+/* 🔥 CONTENIDO */
+.gallery-content{
+  position: absolute;
+
+  top: 50%;
+  left: 120px;
+
+  transform: translateY(-50%);
+
+  background: rgba(0,0,0,0.85);
+
+  padding: 40px 60px;
+
+  z-index: 5;
+}
+
+/* 🔥 TITULO */
+#gallery h2{
+  position: relative;
+
+  color: white;
+
+  font-size: 65px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+
+  text-transform: uppercase;
+}
+
+/* 🔥 LINEA */
+#gallery h2::after{
+  content: "";
+
+  position: absolute;
+
+  bottom: -12px;
+  left: 0;
+
+  width: 120px;
+  height: 4px;
+
+  background: #ffd700;
+}
+
+/* 🔥 TABS */
+.tabs{
+  display: flex;
+
+  gap: 20px;
+}
+
+/* 🔥 BOTONES */
+.tabs button{
+  background: transparent;
+
+  border: none;
+
+  color: white;
+
+  font-size: 17px;
+
   cursor: pointer;
+
+  position: relative;
+
+  transition: .3s;
 }
 
-.slider img:hover {
-  transform: scale(1.05);
+/* 🔥 ACTIVO */
+.tabs button.active-tab::after{
+  content: "";
+
+  position: absolute;
+
+  bottom: -8px;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #ffd700;
 }
 
-/* SCROLL BONITO */
-.slider::-webkit-scrollbar {
-  height: 6px;
+/* 🔥 FLECHAS */
+.arrow{
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 6;
+
+  font-size: 70px;
+
+  color: white;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition: .3s;
+
+  padding: 20px;
 }
 
-.slider::-webkit-scrollbar-thumb {
-  background: #ff9800;
-  border-radius: 10px;
+.arrow:hover{
+  color: #ffd700;
 }
 
-/* ========================= */
-/* 🔥 RESPONSIVE GALERIA */
-/* ========================= */
+/* IZQUIERDA */
+.arrow.left{
+  left: 25px;
+}
 
-@media (max-width: 768px) {
+/* DERECHA */
+.arrow.right{
+  right: 25px;
+}
 
-  .slider img {
-    width: 180px;
-    height: 120px;
+/* 📱 RESPONSIVE */
+@media(max-width:768px){
+
+  .gallery-content{
+    left: 20px;
+
+    width: 85%;
+
+    padding: 25px;
   }
 
-} 
+  #gallery h2{
+    font-size: 42px;
+  }
+
+  .arrow{
+    font-size: 45px;
+  }
+
+}
 /* ========================= */
 /* 🔥 UBICACIÓN PREMIUM */
 /* ========================= */
