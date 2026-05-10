@@ -221,83 +221,76 @@ button:hover {
 
 }
 /* ========================= */
-/* 🔥 TITULO MENÚ PREMIUM */
+/* 🔥 MENU PREMIUM */
 /* ========================= */
 
 #menu{
   background: #000;
+
   text-align: center;
-  padding-top: 40px;
+
+  padding: 70px 0 30px;
 }
 
 /* 🔥 TITULO */
-#menu h2{
+.section-title{
   position: relative;
 
-  display: inline-block;
+  display: inline-flex;
 
-  color: white;
+  justify-content: center;
+  align-items: center;
 
-  font-size: 75px;
+  color: #fff;
+
+  font-size: 85px;
   font-weight: 700;
-
-  margin-bottom: 50px;
 
   letter-spacing: 2px;
 
+  margin: 0 auto 70px;
+
   text-transform: capitalize;
+
+  line-height: 1;
 }
 
 /* 🔥 LINEA ARRIBA */
-#menu h2::before{
+.section-title::before{
   content: "";
 
   position: absolute;
 
-  top: -18px;
+  top: -25px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 160px;
+  width: 180px;
   height: 5px;
 
   background: #ffd700;
 
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 /* 🔥 LINEA ABAJO */
-#menu h2::after{
+.section-title::after{
   content: "";
 
   position: absolute;
 
-  bottom: -18px;
+  bottom: -25px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 160px;
+  width: 180px;
   height: 5px;
 
   background: #ffd700;
 
-  border-radius: 10px;
-}
-
-/* 📱 RESPONSIVE */
-@media(max-width:768px){
-
-  #menu h2{
-    font-size: 50px;
-  }
-
-  #menu h2::before,
-  #menu h2::after{
-    width: 110px;
-  }
-
+  border-radius: 50px;
 }
 /* ========================= */
 /* 🔥 MENU GRANDE (PRO) */
