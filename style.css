@@ -788,8 +788,8 @@ button:hover {
   .mapa iframe{
     height: 350px;
   }
-/* 🔥 FIX MOBILE CENTRADO */
-@media(max-width:768px){
+
+  /* 🔥 FIX MOBILE CENTRADO */
 
   html,
   body{
