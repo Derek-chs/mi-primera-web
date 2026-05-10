@@ -221,71 +221,81 @@ button:hover {
 
 }
 /* ========================= */
-/* 🔥 TITULOS ELEGANTES */
+/* 🔥 TITULO MENÚ PREMIUM */
 /* ========================= */
 
-.section-title{
+#menu{
+  background: #000;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* 🔥 TITULO */
+#menu h2{
   position: relative;
 
   display: inline-block;
 
   color: white;
 
-  font-size: 55px;
-  font-weight: bold;
+  font-size: 75px;
+  font-weight: 700;
+
+  margin-bottom: 50px;
+
+  letter-spacing: 2px;
 
   text-transform: capitalize;
-  letter-spacing: 1px;
-
-  padding: 20px 0;
-
-  margin-bottom: 40px;
 }
 
 /* 🔥 LINEA ARRIBA */
-.section-title::before{
+#menu h2::before{
   content: "";
 
   position: absolute;
 
-  top: 0;
+  top: -18px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 120px;
-  height: 4px;
+  width: 160px;
+  height: 5px;
 
   background: #ffd700;
+
+  border-radius: 10px;
 }
 
 /* 🔥 LINEA ABAJO */
-.section-title::after{
+#menu h2::after{
   content: "";
 
   position: absolute;
 
-  bottom: 0;
+  bottom: -18px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 120px;
-  height: 4px;
+  width: 160px;
+  height: 5px;
 
   background: #ffd700;
+
+  border-radius: 10px;
 }
 
 /* 📱 RESPONSIVE */
 @media(max-width:768px){
 
-  .section-title{
-    font-size: 38px;
+  #menu h2{
+    font-size: 50px;
   }
 
-  .section-title::before,
-  .section-title::after{
-    width: 80px;
+  #menu h2::before,
+  #menu h2::after{
+    width: 110px;
   }
 
 }
