@@ -47,3 +47,92 @@ function mostrarCategoria(id) {
 
   document.getElementById(id).classList.add('active');
 }
+
+/* ========================= */
+/* 🔥 GALERIA PREMIUM */
+/* ========================= */
+
+let currentSlide = 0;
+
+/* 🔥 SLIDER ACTIVO */
+let activeSlider = document.querySelector(".slider.active");
+
+/* 🔥 IMAGENES */
+let slides = activeSlider.querySelectorAll("img");
+
+/* ========================= */
+/* 🔥 MOSTRAR CATEGORIA */
+/* ========================= */
+
+function mostrarCategoria(id, button){
+
+  /* REMOVER ACTIVE */
+  document
+    .querySelectorAll(".slider")
+    .forEach(slider => {
+      slider.classList.remove("active");
+    });
+
+  /* MOSTRAR NUEVO */
+  activeSlider = document.getElementById(id);
+
+  activeSlider.classList.add("active");
+
+  /* BOTONES */
+  document
+    .querySelectorAll(".tabs button")
+    .forEach(btn => {
+      btn.classList.remove("active-tab");
+    });
+
+  button.classList.add("active-tab");
+
+  /* RESET */
+  currentSlide = 0;
+
+  slides = activeSlider.querySelectorAll("img");
+
+  mostrarSlide(currentSlide);
+}
+
+/* ========================= */
+/* 🔥 MOSTRAR SLIDE */
+/* ========================= */
+
+function mostrarSlide(index){
+
+  slides.forEach(img => {
+    img.classList.remove("active-slide");
+  });
+
+  slides[index].classList.add("active-slide");
+}
+
+/* ========================= */
+/* 🔥 MOVER SLIDE */
+/* ========================= */
+
+function moverSlide(direction){
+
+  currentSlide += direction;
+
+  if(currentSlide >= slides.length){
+    currentSlide = 0;
+  }
+
+  if(currentSlide < 0){
+    currentSlide = slides.length - 1;
+  }
+
+  mostrarSlide(currentSlide);
+}
+
+/* ========================= */
+/* 🔥 AUTO PLAY */
+/* ========================= */
+
+setInterval(() => {
+
+  moverSlide(1);
+
+}, 5000);
