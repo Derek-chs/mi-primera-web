@@ -486,7 +486,7 @@ button:hover {
 .titulo-ubicacion{
   position: relative;
 
-  font-size: 75px;
+  font-size: 48px;
   font-weight: 700;
 
   text-align: center;
@@ -651,7 +651,7 @@ button:hover {
   }
 
   .titulo-ubicacion{
-    font-size: 48px;
+    font-size: 55px;
     margin-bottom: 70px;
   }
 
