@@ -432,11 +432,15 @@ button:hover {
 
   transform: translateY(-50%);
 
-  background: rgba(0,0,0,0.85);
+  z-index: 10;
 
-  padding: 40px 60px;
+  background:
+  rgba(0,0,0,0.75);
 
-  z-index: 5;
+  padding: 40px 55px;
+
+  border-left:
+  4px solid #ffd700;
 }
 
 /* 🔥 TITULO */
